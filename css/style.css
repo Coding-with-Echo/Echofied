@@ -3,6 +3,12 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* color palette */
@@ -12,4 +18,55 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+}
+
+/* Typography */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
 }
