@@ -3,8 +3,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 /* color palette */
@@ -14,6 +12,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 /* Typography */
@@ -159,8 +159,12 @@ p {
   height: 40px;
 }
 
-.icon__primary {
+.icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon--container {
@@ -181,9 +185,18 @@ p {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
   text-transform: uppercase;
   white-space: nowraps;
+  text-align: center;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -246,6 +259,23 @@ p {
 
 ::placeholder {
   color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  width: 0;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
