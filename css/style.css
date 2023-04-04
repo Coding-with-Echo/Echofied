@@ -370,3 +370,27 @@ p {
     font-size: 1.6rem;
   }
 }
+
+/* media objects */
+.media {
+  display: flex;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.media__content {
+  margin: 0;
+}
+
+.media__image {
+  margin-top: 1.5rem;
+}
