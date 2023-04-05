@@ -23,10 +23,10 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--color-body);
 }
 
@@ -524,5 +524,51 @@ p {
 
   .testimonial .quote__text {
     margin-top: 3rem;
+  }
+}
+
+/* callouts */
+.callout {
+  background: var(--color-primary);
+
+  padding: 4rem;
+  border-radius: 7px;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__title {
+  color: #fff;
+  margin-top: 0;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+.callout__text {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.callout .btn {
+  align-self: center;
+  margin: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__text {
+    font-size: 1.8rem;
   }
 }
