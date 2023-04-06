@@ -51,6 +51,7 @@ h3 {
 }
 
 p {
+  letter-spacing: 1px;
   margin-top: 0;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -253,6 +254,11 @@ p {
 
 .btn--block {
   width: 100%;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -612,7 +618,7 @@ p {
 /* blocks */
 
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -627,6 +633,13 @@ p {
 
 .block--dark {
   background: #000;
+}
+
+.block--dark,
+h1,
+h2,
+h3 {
+  color: #fff;
 }
 
 .block--skewed-right {
@@ -707,5 +720,40 @@ p {
 
   .nav__item {
     border-bottom: 0;
+  }
+}
+
+/* hero */
+.hero__heading {
+  font-size: 60px;
+  line-height: 6.6rem;
+}
+
+.hero__tagline {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #b9c3cf;
+  font-weight: 400;
+}
+
+.hero .hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__heading {
+    font-size: 8rem;
+    line-height: 8.8rem;
+  }
+
+  .hero .block {
+    padding-top: 0;
   }
 }
